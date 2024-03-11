@@ -1,0 +1,8 @@
+@font-face {
+	font-family: "Overused Grotesk";
+	src:
+		url("/public/fonts/overused-grotesk/overused-grotesk-vf.woff2") format("woff2 supports variations"),
+		url("/public/fonts/overused-grotesk/overused-grotesk-vf.woff2") format("woff2-variations");
+	font-weight: 300 900;
+	font-display: swap;
+}

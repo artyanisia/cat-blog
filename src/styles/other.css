@@ -1,0 +1,9 @@
+@import url("base.css");
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+
+  font-family: var(--font-overused-grotesk);
+  scroll-behavior: smooth;
+}
