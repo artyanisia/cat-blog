@@ -1,1 +1,237 @@
 @import url("base.css");
+
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 54px;
+    background: #d7eced;
+}
+
+main {
+    padding: 10px;
+    max-width: 800px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+nav {
+    padding: 14px 14px;
+    font-size: 17px;
+    background: linear-gradient(90deg, rgba(45,106,119,1) 0%, rgba(135,200,201,1) 36%, rgba(48,189,181,1) 100%);
+}
+
+@media only screen and (max-width: 450px) {
+    nav {
+        max-height: 60px;
+        font-size: 2em;
+        overflow: hidden;
+    }
+}
+
+nav a {
+    margin: 0 20px; 
+    text-decoration: none; 
+    color: #fff; 
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: #0B2B47; 
+    text-decoration: none; 
+}
+
+.topbanner{
+    background: url(https://cdn.shopify.com/s/files/1/0086/0795/7054/files/Frame_7411.png?v=1672049104);
+    background-size: 130vw;
+    padding: 100px;
+    width: 100%;
+    font-size: 2vw;
+}
+
+@media only screen and (max-width: 450px) {
+    .topbanner{
+        background-size: 200vw;
+        padding: 40px;
+        font-size: 4vw;
+    }
+}
+
+
+
+.topbanner-text{
+    text-align: center;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+    color: #0E4B80;
+}
+
+.intro{
+    padding: 100px 0;
+    text-align: center;
+}
+
+.intro-title{
+    font-size: 40px;
+    padding: 0px 10px 10px 0px;
+    color: #2B6394;
+    transition: all 0.3s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.intro-title:hover {
+    transform: scale(1.1);
+}
+
+.intro-text{
+    padding: 20px 0;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #508e97;
+    line-height: 1.5;
+}
+
+.container {
+    width: 300px; 
+    height: auto;
+  }
+
+.characteristics,
+.hobbies,
+.baby,
+.favorite-foods {
+    padding: 50px 0;
+    text-align: left;
+}
+
+.characteristics h2,
+.hobbies h2,
+.baby h2,
+.favorite-foods h2
+{
+    font-size: 36px;
+    color: #2B6394;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.characteristics ul,
+.hobbies ul,
+.favorite-foods ul {
+    list-style-type: disc;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+.characteristics p,
+.hobbies p,
+.baby p,
+.favorite-foods p {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.characteristics img,
+.hobbies img,
+.baby img,
+.favorite-foods img {
+    max-width: 100%;
+    height: auto; 
+    transition: all 0.3s ease-in-out;
+    margin-top: 20px;
+}
+
+.list:hover{
+    transform: scale(1.1);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    grid-gap: 20px; 
+    justify-items: center;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 100%; 
+        grid-gap: 20px; 
+        justify-items: center;
+    }
+}
+
+.grid-container li {
+    list-style: none;
+}
+
+.grid-item {
+    text-align: center;
+}
+
+.grid-item img{
+    max-width: 100%;
+    height: auto;
+}
+
+.list {
+    font-weight: bold;
+    font-size: 20px;
+    color: #3a7782;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#p-text{
+    text-align: left;
+}
+
+footer {
+    width: 100%;
+}
+
+.line {
+    width: 100%;
+    height: 2px; 
+    background-color: #35727e; 
+}
+
+i {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+    color: #333;
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 2px dashed #2d6a77; 
+    padding: 20px;
+    padding-bottom: 170px;
+    background: url(https://static.vecteezy.com/system/resources/previews/019/850/799/non_2x/cute-foot-paws-up-cat-pet-leg-stretch-on-white-background-flat-icon-free-vector.jpg); 
+    background-size: cover; 
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+
+.icon-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info h2 {
+    font-size: 20px;
+    color: #2B6394;
+    margin-bottom: 20px;
+    text-align: center;
+}
