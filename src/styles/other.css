@@ -71,8 +71,8 @@ nav a:hover {
 .grid-container{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(500px,1fr));
-  grid-gap: 150px;
-  padding: 200px;
+  grid-gap: 100px;
+  padding: 100px;
   justify-content: center;
   
 }
